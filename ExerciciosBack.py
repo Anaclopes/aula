@@ -1,7 +1,8 @@
-'''
+
 #Exercício 1
 Nome= "João"
 print(Nome)
+
 
 #Exercício 2
 N1 = 10
@@ -11,6 +12,7 @@ Subtracao = N1 - N2
 Multiplicacao = N1 * N2
 Divisao = N1 // N2
 print(f"Resultado da soma: {Soma}, Resultado da subtração: {Subtracao}, Resultado da multiplicação: {Multiplicacao}, Resultado da divisão: {Divisao}")
+
 
 #Exercício 3
 Preco = 50
@@ -23,6 +25,8 @@ Resultado = 10 + 5 * 2
 print(Resultado)
 
 #Exercício 5
+numero = "150"
+print(int(numero)*2)
 
 #Exercicio 6 - Prof mandou pular
 
@@ -54,8 +58,10 @@ Base = int(input("Insira o valor da sua base: "))
 Expoente = int(input("Insira o valor do seu expoente: "))
 Calc = Base ** Expoente
 print(Calc)
-'''
+
 #Exercicio 12
+preco= int(input("Digite o valor: "))
+print("O preço é R$:" +str(preco))
 
 #Exercicio 13
 Raio = int(input("Informe o valor do raio: "))
@@ -81,3 +87,15 @@ Peso3 = 5
 
 Soma = (Nota1 * Peso1 + Nota2 * Peso2 + Nota3 * Peso3) / (Peso1 + Peso2 + Peso3)
 print(Soma)
+
+#Exercicio 16
+
+import math
+x1= int(input("Insira a primeira coordenada X: "))
+y1= int(input("Insira a primeira coordenada Y: "))
+x2= int(input("Insira a segunda coordenada X: "))
+y2= int(input("Insira a segunda coordenada Y: "))
+
+distancia = math.sqrt((x2 - x1) **2 + (y2-y1)**2 **0.5)
+
+print(f"Sua Distância é: {distancia}")
