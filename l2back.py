@@ -229,20 +229,19 @@ print(eval(func))'''
 
 #Desafio 19 (import re)
 import re
-cpf = list(input("Insira o seu cpf: "))
-cpf_r = r"^\d{3}\.\d{3}\.\d{3}\.d{2}$"
-cpf = re.sub("[.]","", cpf)
+cpf = input("Insira o seu cpf: ")
+cpf = re.sub("[.]", "", cpf)
 cpf = re.sub("-","", cpf)
 
-pv_one = int(cpf[0])*10
-pv_two = int(cpf[1])*9
-pv_three = int(cpf[2])*8
-pv_four = int(cpf[4])*7
-pv_five = int(cpf[5])*6
-pv_six = int(cpf[6])*5
-pv_seven = int(cpf[8])*4
-pv_eight = int(cpf[9])*3
-pv_nine = int(cpf[10])*2
+pv_one = int(cpf[0])
+pv_two = int(cpf[1])
+pv_three = int(cpf[2])
+pv_four = int(cpf[4])
+pv_five = int(cpf[5])
+pv_six = int(cpf[6])
+pv_seven = int(cpf[8])
+pv_eight = int(cpf[9])
+pv_nine = int(cpf[10])
 pv_ten = int(cpf[12])
 pv_eleven = int(cpf[13])
 somapv = (pv_one + pv_two + pv_three + pv_four + pv_five + pv_six + pv_seven + pv_eight + pv_nine) / 11
