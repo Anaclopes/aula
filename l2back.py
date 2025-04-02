@@ -236,14 +236,15 @@ cpf = re.sub("-","", cpf)
 pv_one = int(cpf[0])
 pv_two = int(cpf[1])
 pv_three = int(cpf[2])
-pv_four = int(cpf[4])
-pv_five = int(cpf[5])
-pv_six = int(cpf[6])
-pv_seven = int(cpf[8])
-pv_eight = int(cpf[9])
-pv_nine = int(cpf[10])
-pv_ten = int(cpf[12])
-pv_eleven = int(cpf[13])
+pv_four = int(cpf[3])
+pv_five = int(cpf[4])
+pv_six = int(cpf[5])
+pv_seven = int(cpf[6])
+pv_eight = int(cpf[7])
+pv_nine = int(cpf[8])
+pv_ten = int(cpf[9])
+pv_eleven = int(cpf[10])
+'''print(pv_one, pv_two, pv_three, pv_four,pv_five,pv_six,pv_seven,pv_eight,pv_nine, pv_ten, pv_eleven)'''
 somapv = (pv_one + pv_two + pv_three + pv_four + pv_five + pv_six + pv_seven + pv_eight + pv_nine) / 11
 restopv = somapv % 11
 
