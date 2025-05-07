@@ -133,14 +133,37 @@ elif numero3 == media:
 else:
     print(f"{numero3} - Grande")'''
 
-palavra1 = "Ana".lower()
-palavar2 = "1DSTB-SENAI"
-palavra3 = "Subi no Onibus"
+#Exercício 10
+palavra1 = "Ana".lower().replace(" ", "")
+palavra2 = "1DSTB-SENAI".lower().replace(" ", "")
+palavra3 = "Subi no Onibus".lower().replace(" ", "")
 
-teste = palavra1[::-1]
-print(teste)
+print(palavra3)
+p1 = palavra1[::-1]
+p2 = palavra2[::-1]
+p3 = palavra3[::-1]
 
-if palavra1 == teste:
-    print(f"A")
+if palavra1 == p1:
+    print("As palavras são palíndromos")
 else:
-    print("Puts")
+    print("As palavras não são palíndromos")
+
+if palavra2 == p2:
+    print("As palavras são palíndromos")
+else:
+    print("As palavras não são palíndromos")
+
+if palavra3 == p3:
+    print("As palavras são palíndromos")
+else:
+    print("As palavras não são palíndromos")
+
+'''#Exercício 11
+numero = int(input("Informe um número: "))
+
+fatorial = 1
+
+for i in range(1, numero + 1):
+    fatorial *= i
+
+print(fatorial)'''
